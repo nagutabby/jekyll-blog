@@ -1,0 +1,24 @@
+<header class=" bg-gray-50 flex items-center">
+  {% if page.layout == "home" %}
+  <section class="bg-cover bg-center py-32 w-full" style="background-image: url('assets/images/cat.jpg');">
+    {% else %}
+    <section class="bg-cover bg-center py-32 w-full" style="background-image: url({{ page.image }});">
+      {% endif %}
+      <div class="container mx-auto sm:text-left text-white">
+        <div class="flex items-center justify-center sm:justify-start">
+          <div class="sm:w-1/2">
+            {% if page.layout == "home" %}
+            <h1 class="text-4xl sm:text-5xl font-medium mb-6 text-center sm:text-left">{{ site.title }}</h1>
+            {% else %}
+            <h1 class="text-4xl sm:text-5xl font-medium mb-6 text-center sm:text-left">{{ page.title }}</h1>
+            {% endif %}
+            {% if page.layout == "home" %}
+            <p class="text-xl mb-12 text-center sm:text-left">{{ site.description }}</p>
+            {% else %}
+            <p class="text-xl mb-12 text-center sm:text-left">{{ page.description }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+</header>

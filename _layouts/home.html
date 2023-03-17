@@ -2,11 +2,20 @@
 layout: default
 ---
 
-<ul class="list-inside">
-  {% for post in site.posts %}
-  <li>
-    <span> {{ post.date | date: "%Y-%m-%d" }} </span>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+<section>
+  <div class="container px-6 py-10 mx-auto">
+    <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
+      <div class="lg:flex">
+        <img class="object-cover w-full h-56 rounded-lg lg:w-64" src="{{ post.image }}">
+        <div class="flex flex-col justify-center py-6 lg:mx-6 gap gap-y-2">
+          <a href="{{ post.url }}" class="text-xl font-semibold text-gray-800 hover:underline no-underline">
+            {{ post.title }}
+          </a>
+          <span class="text-sm text-gray-500">{{ post.date | date: "%Y-%m-%d" }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}

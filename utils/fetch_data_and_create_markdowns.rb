@@ -10,6 +10,8 @@ result["contents"].each do |content|
   id = content["id"]
   image = content["image"]["url"]
   title = content["title"]
+  description = content["description"]
+  description = description.gsub("\n", "\n  ")
   body = content["body"]
 
   file = File.open("_posts/#{Date.parse(created_at).strftime("%Y-%m-%d")}-#{id}.md", "w")
@@ -17,6 +19,8 @@ result["contents"].each do |content|
   file.puts("layout: post")
   file.puts("image: #{image}")
   file.puts("title: #{title}")
+  file.puts("description: >-")
+  file.puts("  #{description}")
   file.puts("date: #{created_at}")
   file.puts("---")
   file.puts("#{body}")

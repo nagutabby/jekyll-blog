@@ -1,7 +1,7 @@
 require 'open-uri'
 require 'json'
 
-result = JSON.load(OpenURI.open_uri("https://jekyll-blog-nagutabby.microcms.io/api/v1/",
+result = JSON.load(OpenURI.open_uri("https://jekyll-blog-nagutabby.microcms.io/api/v1/blog",
   "X-MICROCMS-API-KEY" => ENV["X_MICROCMS_API_KEY"]
 ).read)
 

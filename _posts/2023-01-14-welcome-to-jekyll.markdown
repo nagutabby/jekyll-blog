@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2023-01-14 15:16:44 +0900
-categories: jekyll update
+image: https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
+title: "Welcome to Jekyll!"
+date: 2023-01-14 15:16:44 +0900
+description: ここに説明が入ります
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -1,4 +1,4 @@
-<header class=" bg-gray-50 flex items-center">
+<header class=" bg-gray-300 flex items-center mb-9">
   {% if page.layout == "home" %}
   <section class="bg-cover bg-center py-32 w-full" style="background-image: url('assets/images/cat.jpg');">
     {% else %}
@@ -6,7 +6,7 @@
       {% endif %}
       <div class="container mx-auto sm:text-left text-white">
         <div class="flex items-center justify-center sm:justify-start">
-          <div class="sm:w-1/2">
+          <div class="sm:w-2/3">
             {% if page.layout == "home" %}
             <h1 class="text-4xl sm:text-5xl font-medium mb-6 text-center sm:text-left">{{ site.title }}</h1>
             {% else %}

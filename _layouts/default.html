@@ -22,7 +22,13 @@
 
 <body class="flex flex-col h-screen">
   {% include header.html %}
-  <main class="prose grow max-w-[90%] mx-auto">{{ content }}</main>
+  <main class="prose grow max-w-[90%] mx-auto">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        {{ content }}
+      </div>
+    </div>
+  </main>
   {% include footer.html %}
 </body>
 

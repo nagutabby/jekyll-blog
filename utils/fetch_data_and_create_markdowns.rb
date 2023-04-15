@@ -22,6 +22,7 @@ result["contents"].each do |content|
   file.puts("description: >-")
   file.puts("  #{description}")
   file.puts("date: #{created_at}")
+  file.puts("locale: ja_JP")
   file.puts("---")
   file.puts("#{body}")
   file.close

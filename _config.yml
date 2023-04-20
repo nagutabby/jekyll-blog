@@ -20,7 +20,7 @@
 
 collections:
   posts:
-    permalink: "/:title/"
+    permalink: /:title
 
 twitter:
   username: nagutabby

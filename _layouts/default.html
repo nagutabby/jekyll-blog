@@ -9,9 +9,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   {% if page.layout == "home" %}
   <title>{{ site.title }}</title>
+  <link rel="preload" as="image" href="assets/images/cat.webp">
+  {% for post in site.posts %}
+  <link rel="preload" as="image" href="{{ post.image }}&?fit=clip&w=500&h=500">
+  {% endfor %}
   {% else %}
   <title>{{ page.title }} | {{ site.title }}</title>
   {% endif %}
+  <link rel="preload" as="style" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 

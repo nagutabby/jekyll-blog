@@ -11,7 +11,7 @@
   <title>{{ site.title }}</title>
   <link rel="preload" as="image" href="assets/images/cat.webp">
   {% for post in site.posts %}
-  <link rel="preload" as="image" href="{{ post.image }}&?fit=clip&w=500&h=500">
+  <link rel="preload" as="image" href="{{ post.image }}&?fit=clip&w=400&h=400">
   {% endfor %}
   {% else %}
   <title>{{ page.title }} | {{ site.title }}</title>

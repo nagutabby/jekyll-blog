@@ -1,12 +1,12 @@
 <header class="mb-9">
   <div class="relative">
     {% if page.layout == "home" %}
-    <section class="filter grayscale-75 bg-cover bg-center py-[50%] md:py-[30%] lg:py-[20%] xl:py-[10%] bg-white"
-      style="background-image: url('assets/images/cat.webp');">
+    <section class="filter brightness-75 bg-cover bg-center py-[50%] md:py-[30%] lg:py-[20%] xl:py-[10%] bg-white"
+      style="background-image: -webkit-image-set(url('assets/images/cat_1x.webp') 1x, url('assets/images/cat_2x.webp') 2x);">
     </section>
     {% else %}
     <section class="filter brightness-75 bg-cover bg-center py-[50%] md:py-[30%] lg:py-[20%] xl:py-[10%] bg-white"
-      style="background-image: url({{ page.image }}?fit=clip&w=1200);">
+      style="background-image: -webkit-image-set(url('{{ page.image }}?fit=clip&w=600') 1x, url('{{ page.image }}?fit=clip&w=1200') 2x);">
     </section>
     {% endif %}
     <div class="flex justify-center">

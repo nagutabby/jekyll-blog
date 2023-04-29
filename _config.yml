@@ -36,7 +36,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/cat.jpg
+      image: /assets/images/cat_2x.webp
 
 locale: ja_JP
 

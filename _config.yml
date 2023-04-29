@@ -64,6 +64,4 @@ exclude:
   - .gitignore
   - LICENSE
   - README.md
-
-include:
   - node_modules

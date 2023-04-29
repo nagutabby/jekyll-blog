@@ -60,8 +60,10 @@ exclude:
   - .jekyll-cache/
   - Gemfile
   - Gemfile.lock
-  - node_modules/
   - .git/
   - .gitignore
   - LICENSE
   - README.md
+
+include:
+  - node_modules

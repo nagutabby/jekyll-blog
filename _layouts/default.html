@@ -18,15 +18,23 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   {% endif %}
   <link rel="preload" as="style" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <link rel="modulepreload" href="{{ '/assets/js/main.js' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <script src="{{ '/assets/js/main.js' | relative_url }}" type="module" async></script>
 </head>
 
-<body class="flex flex-col h-screen">
+<body>
   {% include header.html %}
-  <main class="w-[90%] mx-auto">{{ content }}</main>
-  {% include footer.html %}
-  <script src="{{ '/assets/js/main.js' | relative_url }}" type="module" async></script>
+  {% if page.layout == "home" %}
+  <main class="home container">
+    {% else %}
+    <main class="post container">
+      {% endif %}
+      {{ content }}
+    </main>
+    {% include footer.html %}
 </body>
 
 </html>

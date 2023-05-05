@@ -1,3 +1,0 @@
-jekyll: jekyll s
-css: ./tailwindcss -o assets/css/main.css --watch --minify
-

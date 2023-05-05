@@ -61,7 +61,6 @@ header {
 }
 
 main {
-  padding: 0 !important;
   .grid {
     > article {
       text-align: center;
@@ -100,6 +99,10 @@ main {
       border-radius: 4%;
     }
   }
+}
+
+.home {
+  padding: 0 !important;
 }
 
 @media (prefers-color-scheme: light) {

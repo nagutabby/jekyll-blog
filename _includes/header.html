@@ -1,9 +1,9 @@
 <header>
   {% if page.layout == "home" %}
-  <img alt="" srcset="assets/images/cat_1x.webp 1x, assets/images/cat_2x.webp 2x">
+  <img alt="" srcset="assets/images/cat_1x.webp 600w, assets/images/cat_2x.webp 1200w">
   </section>
   {% else %}
-  <img alt="" srcset="{{ page.image }}?fit=clip&w=600 1x, {{ page.image }}?fit=clip&w=1200 2x">
+  <img alt="" srcset="{{ page.image }}?fit=clip&w=600 600w, {{ page.image }}?fit=clip&w=1200 1200w">
   </img>
   {% endif %}
   <div class="title container">

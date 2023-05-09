@@ -17,6 +17,7 @@ result["contents"].each do |content|
   file = File.open("_posts/#{Date.parse(created_at).strftime("%Y-%m-%d")}-#{id}.md", "w")
   file.puts("---")
   file.puts("layout: post")
+  file.puts("toc: true")
   file.puts("image: #{image}?fm=webp")
   file.puts("title: #{title}")
   file.puts("description: >-")

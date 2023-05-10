@@ -160,3 +160,7 @@ pre > code {
     }
   }
 }
+
+article > img {
+  background-color: hsl(205, 20%, 94%);
+}
